@@ -20,6 +20,9 @@
       background: #333;
       color: #fff;
     }
+    #choices {
+      margin-top: 2px;
+    }
   </style>
   <body>
     <div class="container">
@@ -33,6 +36,12 @@
               class="form-control form-control-lg"
               id="input"
             />
+            <select id="choices" class="form-control form-control-lg">
+              <option value="pounds">Pounds</option>
+              <option value="g">Grams</option>
+              <option value="kg">Kilograms</option>
+              <option value="oz">Ounces</option>
+            </select>
           </form>
 
           <div id="output">
@@ -49,7 +58,12 @@
                 <div id="kilogramsOutput"></div>
               </div>
             </div>
-
+            <div class="card mb-3 text-center badge-warning">
+              <div class="card-block">
+                <h4>Pounds:</h4>
+                <div id="poundsoutput"></div>
+              </div>
+            </div>
             <div class="card badge-danger mb-3 text-center">
               <div class="card-block ">
                 <h4>Ounces:</h4>
